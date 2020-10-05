@@ -8,7 +8,7 @@ public class EchoController {
 
     @PostMapping
     public String echo(@RequestBody String message) {
-        return message;
+        return String.format("Received: %s", message);
     }
 
 }
